@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: "font";
+  src: url(../font/Gilroy-Bold.ttf);
+}
+body {
+  font-family: font;
+}
+body .cont {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+body header {
+  text-align: center;
+}
+body header h1 {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+body header p {
+  font-weight: 500;
+  margin-bottom: 63px;
+}
+body section .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 71px;
+}
+body section .box h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+body section .box a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0071E3;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 48px;
+}
+body footer .box {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body footer .box button {
+  width: 155px;
+  height: 42px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body footer .box .btn1 {
+  background: #0071E3;
+  color: #fff;
+}
+body footer .box .btn2 {
+  background: #CFE7FF;
+  color: #797979;
+}
+body footer .box_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 57px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+}
+body footer .box_btn button {
+  width: 321px;
+  height: 57px;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+body footer .box_btn button h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+body footer .box_btn button p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+body footer .box_btn .color {
+  border: 4px solid #0071E3;
+}
+body .click {
+  width: 39px;
+  height: 24px;
+  border-radius: 15px;
+  background-color: #0071E3;
+}/*# sourceMappingURL=s.css.map */

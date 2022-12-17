@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+@mixin flex($a, $b, $c, $d) {
+  display: $a;
+  justify-content: $b;
+  align-items: $c;
+  gap: $d;
+}
+
+@font-face {
+  font-family: "font";
+  src: url(../font/Gilroy-Bold.ttf);
+}
+
+body {
+  font-family: font;
+
+  .cont {
+    max-width: 1140px;
+    margin: 50px auto;
+  }
+
+
+  header {
+    text-align: center;
+
+    h1 {
+
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    p {
+
+      font-weight: 500;
+      margin-bottom: 63px;
+    }
+  }
+
+  section {
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 71px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+      }
+
+      a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #0071E3;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 0 48px;
+      }
+    }
+  }
+
+  footer {
+
+    .box {
+      margin: 0 auto;
+      width: fit-content;
+
+      button {
+        width: 155px;
+        height: 42px;
+
+        border-radius: 10px;
+        border: 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+
+
+
+      }
+
+      .btn1 {
+        background: #0071E3;
+        color: #fff;
+      }
+
+      .btn2 {
+
+        background: #CFE7FF;
+        color: #797979;
+      }
+
+
+
+    }
+
+    .box_btn {
+      @include flex(flex, center, center, 7px);
+      margin: 57px auto;
+      width: fit-content;
+      flex-direction: column;
+
+      button {
+        width: 321px;
+        height: 57px;
+        background: transparent;
+        cursor: pointer;
+        border: 2px solid rgb(200, 200, 200);
+        border-radius: 10px;
+        padding: 0 20px;
+
+        // &:hover{
+        //   border: 2px solid rgb(137, 137, 137);
+
+        // }
+
+        @include flex(flex, space-between, center, 0);
+
+        h6 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+      .color {
+        border: 4px solid #0071E3;
+      }
+    }
+  }
+
+  .click {
+    width: 39px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #0071E3;
+  }
+}
